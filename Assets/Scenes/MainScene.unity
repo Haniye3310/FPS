@@ -775,7 +775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mouseSensivity: 500
-  _playerTransform: {fileID: 1704625645}
+  _playerTransform: {fileID: 1944260270}
 --- !u!143 &1944260272
 CharacterController:
   m_ObjectHideFlags: 0

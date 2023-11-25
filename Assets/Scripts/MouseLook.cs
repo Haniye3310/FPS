@@ -4,6 +4,10 @@ public class MouseLook : MonoBehaviour
 {
     [SerializeField] private float _mouseSensivity = 100f;
     [SerializeField] private Transform _playerTransform;
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     private void Update()
     {
         float mouseX = Input.GetAxis("Mouse X") * _mouseSensivity * Time.deltaTime;
