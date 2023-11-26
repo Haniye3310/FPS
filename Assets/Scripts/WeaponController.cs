@@ -30,7 +30,8 @@ public class WeaponController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(_silencer.position, transform.forward, out hit, _maxDistance))
         {
-            hit.rigidbody.AddForce(new Vector3(10,10,500));
+            if (hit.rigidbody == null) return;
+            hit.rigidbody.AddForce(new Vector3(10,150,500));
         }
     }
     private void Reload() 
